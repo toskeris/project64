@@ -27,7 +27,3 @@ def isPrime(number):
 
 factors = getFactors(number)
 
-
-
-prime = 2
-for n in factors:
