@@ -216,4 +216,6 @@ for n in items:
     x+=n
 
 x = str(x)
+end = time() - start
 print(x[0:10])
+print("The time is %s" % end)
