@@ -1,3 +1,6 @@
+import time
+
+
 """
 
 n the 20×20 grid below, four numbers along a diagonal line have been marked in red.
@@ -31,6 +34,8 @@ The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
 """
+
+start = time.time()
 
 grid = [
     [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
@@ -92,5 +97,7 @@ for y in range(0, 20):
             if(u >= currentnum):
                 currentnum = u
 
+elapsed = (time.time() - start)
 
 print(currentnum)
+print("Time used %s" % elapsed)
